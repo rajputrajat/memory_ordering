@@ -1,3 +1,6 @@
+use std::thread;
 fn main() {
-    println!("Hello, world!");
+    thread::spawn(|| println!("hello Ira!")).join().unwrap();
+    thread::spawn(|| println!("hello Suman!")).join().unwrap();
 }
+
